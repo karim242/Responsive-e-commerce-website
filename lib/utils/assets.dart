@@ -1,6 +1,34 @@
 class Assets {
   Assets._();
   
+  /// Assets for fonstsOpenSansRegular
+  /// assets/fonsts/OpenSans-Regular.ttf
+  static const String fonstsOpenSansRegular = "assets/fonsts/OpenSans-Regular.ttf";
+
+  /// Assets for fonstsOpenSansSemiBold
+  /// assets/fonsts/OpenSans-SemiBold.ttf
+  static const String fonstsOpenSansSemiBold = "assets/fonsts/OpenSans-SemiBold.ttf";
+
+  /// Assets for fonstsPoppinsMedium
+  /// assets/fonsts/Poppins-Medium.ttf
+  static const String fonstsPoppinsMedium = "assets/fonsts/Poppins-Medium.ttf";
+
+  /// Assets for fonstsPoppinsRegular
+  /// assets/fonsts/Poppins-Regular.ttf
+  static const String fonstsPoppinsRegular = "assets/fonsts/Poppins-Regular.ttf";
+
+  /// Assets for fonstsPoppinsSemiBold
+  /// assets/fonsts/Poppins-SemiBold.ttf
+  static const String fonstsPoppinsSemiBold = "assets/fonsts/Poppins-SemiBold.ttf";
+
+  /// Assets for fonstsPublicSansSemiBold
+  /// assets/fonsts/PublicSans-SemiBold.ttf
+  static const String fonstsPublicSansSemiBold = "assets/fonsts/PublicSans-SemiBold.ttf";
+
+  /// Assets for fonstsRobotoMedium
+  /// assets/fonsts/Roboto-Medium.ttf
+  static const String fonstsRobotoMedium = "assets/fonsts/Roboto-Medium.ttf";
+
   /// Assets for imagesAvater
   /// assets/images/avater.svg
   static const String imagesAvater = "assets/images/avater.svg";
@@ -49,9 +77,13 @@ class Assets {
   /// assets/images/filled_heart.svg
   static const String imagesFilledHeart = "assets/images/filled_heart.svg";
 
-  /// Assets for imagesGroup 54
-  /// assets/images/Group 54.svg
-  static const String imagesGroup54 = "assets/images/Group54.svg";
+  /// Assets for imagesGirl
+  /// assets/images/girl.svg
+  static const String imagesGirl = "assets/images/girl.svg";
+
+  /// Assets for imagesGirle
+  /// assets/images/girle.png
+  static const String imagesGirle = "assets/images/girle.png";
 
   /// Assets for imagesGroup1
   /// assets/images/Group1.svg
@@ -69,12 +101,16 @@ class Assets {
   /// assets/images/Group4.svg
   static const String imagesGroup4 = "assets/images/Group4.svg";
 
+  /// Assets for imagesGroup54
+  /// assets/images/Group54.svg
+  static const String imagesGroup54 = "assets/images/Group54.svg";
+
   /// Assets for imagesHome
   /// assets/images/home.svg
   static const String imagesHome = "assets/images/home.svg";
 
-  /// Assets for imagesMask group
-  /// assets/images/Mask group.svg
+  /// Assets for imagesMaskgroup
+  /// assets/images/Maskgroup.svg
   static const String imagesMaskgroup = "assets/images/Maskgroup.svg";
 
   /// Assets for imagesMessage
@@ -101,6 +137,10 @@ class Assets {
   /// assets/images/profile.svg
   static const String imagesProfile = "assets/images/profile.svg";
 
+  /// Assets for imagesRectangle 9
+  /// assets/images/Rectangle 9.png
+  static const String imagesRectangle9 = "assets/images/Rectangle9.png";
+
   /// Assets for imagesSaved
   /// assets/images/saved.svg
   static const String imagesSaved = "assets/images/saved.svg";
@@ -116,5 +156,9 @@ class Assets {
   /// Assets for imagesSoundix
   /// assets/images/soundix.svg
   static const String imagesSoundix = "assets/images/soundix.svg";
+
+  /// Assets for imagesStar
+  /// assets/images/star.svg
+  static const String imagesStar = "assets/images/star.svg";
 }
 
