@@ -37,6 +37,10 @@ class Assets {
   /// assets/images/beats_studio.svg
   static const String imagesBeatsStudio = "assets/images/beats_studio.svg";
 
+  /// Assets for imagesBlueStar
+  /// assets/images/blueStar.svg
+  static const String imagesBlueStar = "assets/images/blueStar.svg";
+
   /// Assets for imagesCart
   /// assets/images/cart.svg
   static const String imagesCart = "assets/images/cart.svg";
@@ -76,10 +80,6 @@ class Assets {
   /// Assets for imagesFilledHeart
   /// assets/images/filled_heart.svg
   static const String imagesFilledHeart = "assets/images/filled_heart.svg";
-
-  /// Assets for imagesGirl
-  /// assets/images/girl.svg
-  static const String imagesGirl = "assets/images/girl.svg";
 
   /// Assets for imagesGirle
   /// assets/images/girle.png
@@ -137,8 +137,8 @@ class Assets {
   /// assets/images/profile.svg
   static const String imagesProfile = "assets/images/profile.svg";
 
-  /// Assets for imagesRectangle 9
-  /// assets/images/Rectangle 9.png
+  /// Assets for imagesRectangle9
+  /// assets/images/Rectangle9.png
   static const String imagesRectangle9 = "assets/images/Rectangle9.png";
 
   /// Assets for imagesSaved

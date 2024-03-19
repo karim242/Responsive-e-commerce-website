@@ -15,26 +15,44 @@ class HeadPhoneRow extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Column(
-          children: [
-            Text(
-              "Headphone",
-              style: AppStyles.styleMediumPo26(context),
-            ),
-            Text(
-              "from top brands",
-              style: AppStyles.styleRegularPo16(context),
-            )
-          ],
+        Flexible(
+          child: Column(
+            children: [
+              Text(
+                "Headphone",
+                style: AppStyles.styleMediumPo26(context),
+              ),
+              Text(
+                "from top brands",
+                style: AppStyles.styleRegularPo16(context),
+              )
+            ],
+          ),
         ),
         const Spacer(),
         const CustomTextField(),
         const SizedBox(width: 20),
-        SvgPicture.asset(Assets.imagesMessage),
+        ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 48),
+          child: AspectRatio(
+              aspectRatio: 1, child: SvgPicture.asset(Assets.imagesMessage)),
+        ),
         const SizedBox(width: 20),
-        SvgPicture.asset(Assets.imagesGroup54),
+        ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 48),
+          child: AspectRatio(
+            aspectRatio: 1,
+            child: SvgPicture.asset(Assets.imagesGroup54),
+          ),
+        ),
         const SizedBox(width: 20),
-        ClipRRect(child: Image.asset(Assets.imagesGirle))
+        ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 48),
+          child: AspectRatio(
+            aspectRatio: 1,
+            child: Image.asset(Assets.imagesGirle),
+          ),
+        )
       ],
     );
   }

@@ -14,7 +14,12 @@ class DesketopLayout extends StatelessWidget {
         SizedBox(
           width: 24,
         ),
-        Expanded(flex: 4, child: HeadPhoneBody())
+        Expanded(
+          flex: 5,
+          child: CustomScrollView(slivers: [
+            SliverFillRemaining(hasScrollBody: false, child: HeadPhoneBody()),
+          ]),
+        )
       ],
     );
   }
