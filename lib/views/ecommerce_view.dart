@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_e_commerce_website/widgets/adaptive_layout.dart';
 import 'package:responsive_e_commerce_website/widgets/desketop_layout.dart';
+import 'package:responsive_e_commerce_website/widgets/tablet_layout.dart';
 
 class EcommerceView extends StatelessWidget {
   const EcommerceView({super.key});
@@ -11,7 +12,7 @@ class EcommerceView extends StatelessWidget {
       backgroundColor: const Color(0xffF5F5F5),
       body: AdaptiveLayout(
         mobileLayout: (BuildContext context) =>const SizedBox(),
-        tabletLayout: (BuildContext context) =>const SizedBox(),
+        tabletLayout: (BuildContext context) =>const TabletLayout(),
         desketopLayout: (BuildContext context) =>const DesketopLayout(),
       ),
     );

@@ -15,26 +15,32 @@ class HeadPhoneRow extends StatelessWidget {
   Widget build(BuildContext context) {
     log(MediaQuery.sizeOf(context).width.toString());
     return Row(
-    //  mainAxisSize: MainAxisSize.max,
+      //  mainAxisSize: MainAxisSize.max,
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        FittedBox(
-          child: Column(
-            children: [
-              Text(
+        Column(
+          children: [
+            FittedBox(
+              child: Text(
                 "Headphone",
                 style: AppStyles.styleMediumPo26(context),
               ),
-              Text(
+            ),
+            FittedBox(
+              child: Text(
                 "from top brands",
                 style: AppStyles.styleRegularPo16(context),
-              )
-            ],
-          ),
+              ),
+            )
+          ],
         ),
-        const Spacer(),
-        const CustomTextField(),
+        MediaQuery.sizeOf(context).width <= 1220
+            ? const SizedBox(
+                width: 20,
+              )
+            : const Spacer(),
+        const Flexible(child: CustomTextField()),
         const SizedBox(width: 20),
         SvgPicture.asset(Assets.imagesMessage),
         const SizedBox(width: 20),

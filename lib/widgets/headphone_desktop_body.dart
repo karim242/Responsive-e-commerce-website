@@ -5,8 +5,8 @@ import 'package:responsive_e_commerce_website/widgets/beats_and_list_and_explore
 import 'package:responsive_e_commerce_website/widgets/headphone_row.dart';
 import 'package:responsive_e_commerce_website/widgets/summer_headphone_card.dart';
 
-class HeadPhoneBody extends StatelessWidget {
-  const HeadPhoneBody({super.key});
+class HeadPhoneDesktopBody extends StatelessWidget {
+  const HeadPhoneDesktopBody({super.key});
 
   @override
   Widget build(BuildContext context) {

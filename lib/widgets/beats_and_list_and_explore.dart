@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:responsive_e_commerce_website/widgets/explore_popular_row.dart';
 import 'package:responsive_e_commerce_website/widgets/beats_studio3_category.dart';
 import 'package:responsive_e_commerce_website/widgets/explore_popular_header.dart';
@@ -25,11 +26,14 @@ class BeatsAndListAndExplore extends StatelessWidget {
         SizedBox(
           height: 20,
         ),
-        AllHeader(title:  "Explore Popular Categories", subtitle: 'See all',),
+        AllHeader(
+          title: "Explore Popular Categories",
+          subtitle: 'See all',
+        ),
         SizedBox(
           height: 10,
         ),
-        ExplorePopularRow(),
+        FittedBox(child: ExplorePopularRow()),
         SizedBox(
           height: 10,
         ),

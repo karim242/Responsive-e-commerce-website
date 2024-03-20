@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:responsive_e_commerce_website/widgets/custom_drawer.dart';
-import 'package:responsive_e_commerce_website/widgets/headphone_body.dart';
+import 'package:responsive_e_commerce_website/widgets/headphone_desktop_body.dart';
 
 class DesketopLayout extends StatelessWidget {
   const DesketopLayout({super.key});
@@ -17,7 +17,8 @@ class DesketopLayout extends StatelessWidget {
         Expanded(
           flex: 7,
           child: CustomScrollView(slivers: [
-            SliverFillRemaining(hasScrollBody: false, child: HeadPhoneBody()),
+            SliverFillRemaining(
+                hasScrollBody: false, child: HeadPhoneDesktopBody()),
           ]),
         )
       ],
