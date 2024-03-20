@@ -18,13 +18,13 @@ class BotttonsRow extends StatelessWidget {
               border: Border.all(color: const Color(0xff009393))),
           child: SvgPicture.asset(Assets.imagesFilledHeart),
         ),
-        const SizedBox(width: 20),
+        const SizedBox(width: 35),
         const CustomBotton(
           text: 'Add to Cart',
           color: Color(0xffffffff),
           textColor: Color(0xff009393),
         ),
-        const SizedBox(width: 20),
+        const SizedBox(width: 45),
         const CustomBotton(
           text: 'Buy now',
           color: Color(0xff009393),

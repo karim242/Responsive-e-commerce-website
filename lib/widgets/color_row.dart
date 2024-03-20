@@ -16,13 +16,16 @@ class ColorRow extends StatelessWidget {
               AppStyles.styleMediumPo16(context).copyWith(color: Colors.black),
         ),
         const SizedBox(
-          width: 20,
+          width: 10,
         ),
         const ColorListItem(),
-        const SizedBox(
-          width: 80,
+        SizedBox(
+          width: MediaQuery.sizeOf(context).width / 10,
         ),
         const AddNumder(),
+        const SizedBox(
+          width: 10,
+        ),
       ],
     );
   }

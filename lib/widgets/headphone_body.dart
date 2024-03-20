@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:responsive_e_commerce_website/widgets/beats_and_list_and_explore.dart';
 import 'package:responsive_e_commerce_website/widgets/custom_container.dart';
 import 'package:responsive_e_commerce_website/widgets/headphone_row.dart';
+import 'package:responsive_e_commerce_website/widgets/summer_headphone_card.dart';
 
 class HeadPhoneBody extends StatelessWidget {
   const HeadPhoneBody({super.key});
@@ -19,9 +20,11 @@ class HeadPhoneBody extends StatelessWidget {
         Row(children: [
           Expanded(flex: 2, child: BeatsAndListAndExplore()),
           Expanded(
+            flex: 1,
             child: CustomContainer(
-              child: SizedBox(),
-            ),
+             child: SummerHeadPhoneCard(),  
+              ),
+            
           )
         ]),
       ],

@@ -13,16 +13,15 @@ class BeatsStudio3Category extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomContainer(
-      child: Flexible(
+      child: FittedBox(
         child: Row(
+          mainAxisSize: MainAxisSize.max,
           children: [
-            Expanded(child: Image.asset(Assets.imagesRectangle9)),
-            const SizedBox(
-              width: 20,
-            ),
+            Image.asset(Assets.imagesRectangle9),
+            const SizedBox(width: 30),
             const Padding(
-              padding: EdgeInsets.all(22.0),
-              child: Expanded(child: BeatsStudio3Body()),
+              padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 32),
+              child: BeatsStudio3Body(),
             ),
           ],
         ),

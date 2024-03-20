@@ -73,6 +73,38 @@ class Assets {
   /// assets/images/daily_deals1.svg
   static const String imagesDailyDeals1 = "assets/images/daily_deals1.svg";
 
+  /// Assets for imagesEllipse1
+  /// assets/images/Ellipse1.png
+  static const String imagesEllipse1 = "assets/images/Ellipse1.png";
+
+  /// Assets for imagesEllipse2
+  /// assets/images/Ellipse2.png
+  static const String imagesEllipse2 = "assets/images/Ellipse2.png";
+
+  /// Assets for imagesEllipse21
+  /// assets/images/Ellipse21.png
+  static const String imagesEllipse21 = "assets/images/Ellipse21.png";
+
+  /// Assets for imagesEllipse22
+  /// assets/images/Ellipse22.png
+  static const String imagesEllipse22 = "assets/images/Ellipse22.png";
+
+  /// Assets for imagesEllipse23
+  /// assets/images/Ellipse23.png
+  static const String imagesEllipse23 = "assets/images/Ellipse23.png";
+
+  /// Assets for imagesEllipse24
+  /// assets/images/Ellipse24.png
+  static const String imagesEllipse24 = "assets/images/Ellipse24.png";
+
+  /// Assets for imagesEllipse3
+  /// assets/images/Ellipse3.png
+  static const String imagesEllipse3 = "assets/images/Ellipse3.png";
+
+  /// Assets for imagesEllipse4
+  /// assets/images/Ellipse4.png
+  static const String imagesEllipse4 = "assets/images/Ellipse4.png";
+
   /// Assets for imagesExplore
   /// assets/images/explore.svg
   static const String imagesExplore = "assets/images/explore.svg";

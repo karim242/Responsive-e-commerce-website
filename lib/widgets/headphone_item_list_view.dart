@@ -22,6 +22,14 @@ class HeadPhoneItemListView extends StatelessWidget {
         image: Assets.imagesGroup4,
         title: 'Beats Solo3 Wireless',
         price: '25.99'),
+    HeadPhoneItemModel(
+        image: Assets.imagesGroup2,
+        title: 'Beats Solo3 Wireless',
+        price: '16.99'),
+    HeadPhoneItemModel(
+        image: Assets.imagesGroup3,
+        title: 'Beats Solo3 Wireless',
+        price: '16.99'),
   ];
   @override
   Widget build(BuildContext context) {
@@ -30,7 +38,7 @@ class HeadPhoneItemListView extends StatelessWidget {
       child: Row(
         children: item
             .map((e) => Padding(
-                  padding: const EdgeInsets.only(right: 29),
+                  padding: const EdgeInsets.only(right: 24),
                   child: HeadPhoneItem(
                     item: e,
                   ),
