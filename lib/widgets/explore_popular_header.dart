@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_e_commerce_website/utils/app_styles.dart';
 
-class ExploarPopularHeader extends StatelessWidget {
-  const ExploarPopularHeader({super.key});
-
+class AllHeader extends StatelessWidget {
+  const AllHeader({super.key, required this.title, required this.subtitle});
+final String title, subtitle;
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         Text(
-          "Explore Popular Categories",
+         title,
           style: AppStyles.styleSemBoldRobp24(context),
         ),
         const Spacer(),
@@ -17,7 +17,7 @@ class ExploarPopularHeader extends StatelessWidget {
         //   width: 18,
         // ),
         Text(
-          "See all",
+          subtitle,
           style: AppStyles.styleMediumPo14(context),
         ),
         const SizedBox(

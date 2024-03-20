@@ -25,7 +25,7 @@ class BeatsAndListAndExplore extends StatelessWidget {
         SizedBox(
           height: 20,
         ),
-        ExploarPopularHeader(),
+        AllHeader(title:  "Explore Popular Categories", subtitle: 'See all',),
         SizedBox(
           height: 10,
         ),
