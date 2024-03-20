@@ -10,12 +10,12 @@ class DesketopLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Row(
       children: [
-        Expanded(child: CustomDrawer()),
+        Expanded(flex: 1, child: CustomDrawer()),
         SizedBox(
-          width: 24,
+          width: 20,
         ),
         Expanded(
-          flex: 5,
+          flex: 7,
           child: CustomScrollView(slivers: [
             SliverFillRemaining(hasScrollBody: false, child: HeadPhoneBody()),
           ]),

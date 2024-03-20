@@ -15,14 +15,20 @@ class HeadPhoneBody extends StatelessWidget {
         SizedBox(
           height: 20,
         ),
-        HeadPhoneRow(),
-        Row(children: [
-          Expanded(flex: 2, child: BeatsAndListAndExplore()),
-          Expanded(
-            flex: 1,
-            child: SummerHeadPhoneCard(),
-          )
-        ]),
+        Expanded(child: HeadPhoneRow()),
+        // (child: Row(),),
+        Row(
+          children: [
+            Expanded(
+              flex: 2,
+              child: BeatsAndListAndExplore(),
+            ),
+            Expanded(
+              flex: 1,
+              child: SummerHeadPhoneCard(),
+            ),
+          ],
+        ),
       ],
     );
   }

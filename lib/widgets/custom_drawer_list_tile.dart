@@ -10,15 +10,19 @@ class CustomDrawerListTile extends StatelessWidget {
   final bool isActive;
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: SvgPicture.asset(item.image),
-      title: Text(item.title, style: AppStyles.styleMediumPo18(context)),
-      trailing: AnimatedCrossFade(
-        firstChild: const IsActive(),
-        secondChild: const SizedBox(),
-        crossFadeState:
-            isActive ? CrossFadeState.showFirst : CrossFadeState.showSecond,
-        duration: const Duration(milliseconds: 500),
+    return Flexible(
+      child: ListTile(
+        leading: SvgPicture.asset(item.image),
+        title: FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(item.title, style: AppStyles.styleMediumPo18(context))),
+        trailing: AnimatedCrossFade(
+          firstChild: const IsActive(),
+          secondChild: const SizedBox(),
+          crossFadeState:
+              isActive ? CrossFadeState.showFirst : CrossFadeState.showSecond,
+          duration: const Duration(milliseconds: 500),
+        ),
       ),
     );
   }
@@ -39,7 +43,7 @@ class IsActive extends StatelessWidget {
           bottomLeft: Radius.circular(12),
         ),
       ),
-      width: 6,
+      width: 5,
     );
   }
 }

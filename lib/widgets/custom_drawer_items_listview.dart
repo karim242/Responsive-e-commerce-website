@@ -20,8 +20,7 @@ class _CustomDrawerListViewState extends State<CustomDrawerListView> {
     DrawerItemsModel(title: "Cart", image: Assets.imagesCart),
     DrawerItemsModel(title: "Selling", image: Assets.imagesSelling),
     DrawerItemsModel(title: "Profile", image: Assets.imagesProfile),
-    DrawerItemsModel(
-        title: "Prchase History", image: Assets.imagesPrchaseHistory),
+    DrawerItemsModel(title: "Prchase", image: Assets.imagesPrchaseHistory),
     DrawerItemsModel(title: "Contact us", image: Assets.imagesContactus),
     DrawerItemsModel(title: "Settings", image: Assets.imagesSetting),
   ];

@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -11,11 +13,13 @@ class HeadPhoneRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    log(MediaQuery.sizeOf(context).width.toString());
     return Row(
+    //  mainAxisSize: MainAxisSize.max,
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Flexible(
+        FittedBox(
           child: Column(
             children: [
               Text(
@@ -32,27 +36,11 @@ class HeadPhoneRow extends StatelessWidget {
         const Spacer(),
         const CustomTextField(),
         const SizedBox(width: 20),
-        ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 48),
-          child: AspectRatio(
-              aspectRatio: 1, child: SvgPicture.asset(Assets.imagesMessage)),
-        ),
+        SvgPicture.asset(Assets.imagesMessage),
         const SizedBox(width: 20),
-        ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 48),
-          child: AspectRatio(
-            aspectRatio: 1,
-            child: SvgPicture.asset(Assets.imagesGroup54),
-          ),
-        ),
+        SvgPicture.asset(Assets.imagesGroup54),
         const SizedBox(width: 20),
-        ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 48),
-          child: AspectRatio(
-            aspectRatio: 1,
-            child: Image.asset(Assets.imagesGirle),
-          ),
-        )
+        Image.asset(Assets.imagesGirle)
       ],
     );
   }

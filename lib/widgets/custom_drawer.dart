@@ -27,13 +27,13 @@ class CustomDrawer extends StatelessWidget {
             ),
             const SliverToBoxAdapter(
               child: SizedBox(
-                height: 30,
+                height: 20,
               ),
             ),
             const CustomDrawerListView(),
             const SliverToBoxAdapter(
               child: SizedBox(
-                height: 36,
+                height: 20,
               ),
             ),
             SliverToBoxAdapter(

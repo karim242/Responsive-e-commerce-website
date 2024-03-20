@@ -17,15 +17,21 @@ class SummerHeadPhoneCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
+          const SizedBox(
+            height: 20,
+          ),
           AspectRatio(
               aspectRatio: 381 / 220,
               child: SvgPicture.asset(Assets.imagesMask)),
           const SizedBox(
-            height: 40,
+            height: 15,
           ),
           const AllHeader(
             title: "Daily Deals ",
             subtitle: 'View all',
+          ),
+          const SizedBox(
+            height: 15,
           ),
           const CustomContainer(child: DailyDealsListView())
         ],
