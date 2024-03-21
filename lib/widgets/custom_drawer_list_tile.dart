@@ -14,8 +14,8 @@ class CustomDrawerListTile extends StatelessWidget {
       child: ListTile(
         leading: SvgPicture.asset(item.image),
         title: FittedBox(
-          fit: BoxFit.scaleDown,
-          child: Text(item.title, style: AppStyles.styleMediumPo18(context))),
+            fit: BoxFit.scaleDown,
+            child: Text(item.title, style: AppStyles.styleMediumPo18(context))),
         trailing: AnimatedCrossFade(
           firstChild: const IsActive(),
           secondChild: const SizedBox(),
@@ -44,6 +44,7 @@ class IsActive extends StatelessWidget {
         ),
       ),
       width: 5,
+    //  height: 5,
     );
   }
 }

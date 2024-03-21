@@ -9,7 +9,7 @@ class ExplorePopularRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
         ExplorePopularCard(
           title: 'Popular  top 10 brands',

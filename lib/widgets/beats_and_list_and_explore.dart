@@ -11,30 +11,34 @@ class BeatsAndListAndExplore extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    double width = MediaQuery.sizeOf(context).width;
+    return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SizedBox(
+        const SizedBox(
           height: 16,
         ),
-        AspectRatio(aspectRatio: 733 / 313, child: BeatsStudio3Category()),
-        SizedBox(
+        const AspectRatio(
+            aspectRatio: 733 / 313, child: BeatsStudio3Category()),
+        const SizedBox(
           height: 16,
         ),
-        HeadPhoneItemListView(),
-        SizedBox(
+        const HeadPhoneItemListView(),
+        const SizedBox(
           height: 20,
         ),
-        AllHeader(
+        const AllHeader(
           title: "Explore Popular Categories",
           subtitle: 'See all',
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
-        FittedBox(child: ExplorePopularRow()),
-        SizedBox(
+        width < 1200
+            ? const FittedBox(child: ExplorePopularRow())
+            : ExplorePopularRow(),
+        const SizedBox(
           height: 10,
         ),
       ],

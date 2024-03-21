@@ -13,7 +13,8 @@ class HeadPhoneRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    log(MediaQuery.sizeOf(context).width.toString());
+    double width = MediaQuery.sizeOf(context).width;
+    log(width.toString());
     return Row(
       //  mainAxisSize: MainAxisSize.max,
       mainAxisAlignment: MainAxisAlignment.start,
@@ -35,17 +36,17 @@ class HeadPhoneRow extends StatelessWidget {
             )
           ],
         ),
-        MediaQuery.sizeOf(context).width <= 1220
+        width <= 1220
             ? const SizedBox(
                 width: 20,
               )
             : const Spacer(),
         const Flexible(child: CustomTextField()),
-        const SizedBox(width: 20),
+        width <360? const SizedBox(width: 20):const SizedBox(width:1),
         SvgPicture.asset(Assets.imagesMessage),
-        const SizedBox(width: 20),
-        SvgPicture.asset(Assets.imagesGroup54),
-        const SizedBox(width: 20),
+         width < 360? const SizedBox(width: 20):const SizedBox(width:1),
+         SvgPicture.asset(Assets.imagesGroup54),
+         width <360? const SizedBox(width: 20):const SizedBox(width:1),
         Image.asset(Assets.imagesGirle)
       ],
     );
