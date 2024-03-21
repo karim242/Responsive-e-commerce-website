@@ -13,6 +13,7 @@ class CustomDrawerHeader extends StatelessWidget {
     return ListTile(
         leading: FittedBox(child: SvgPicture.asset(Assets.imagesSoundix)),
         title: FittedBox(
+            fit: BoxFit.scaleDown,
             child:
                 Text("Soundix", style: AppStyles.styleBoldPublic25(context))));
   }

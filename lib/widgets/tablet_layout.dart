@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_e_commerce_website/widgets/custom_drawer.dart';
-import 'package:responsive_e_commerce_website/widgets/headphone_tablet_body.dart';
+import 'package:responsive_e_commerce_website/widgets/mobile_layot.dart';
 
 class TabletLayout extends StatelessWidget {
   const TabletLayout({super.key});
@@ -19,7 +19,7 @@ class TabletLayout extends StatelessWidget {
             flex: 3,
             child: Padding(
               padding: EdgeInsets.only(top: 20.0),
-              child: HeadPhoneTabletBody(),
+              child: MobileLayout(),
             )),
         SizedBox(
           width: 24,
